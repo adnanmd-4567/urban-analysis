@@ -1,0 +1,30 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_80_Kachiguda_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 12048730960 }, "geometry": { "type": "Point", "coordinates": [ 78.4945424, 17.3969183 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2857520245 }, "geometry": { "type": "Point", "coordinates": [ 78.4961598, 17.3920174 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 308783106 }, "geometry": { "type": "Point", "coordinates": [ 78.4969578, 17.391947 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 4023436722 }, "geometry": { "type": "Point", "coordinates": [ 78.4965339, 17.3908042 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2857520245 }, "geometry": { "type": "Point", "coordinates": [ 78.4957641, 17.3925332 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3184132432 }, "geometry": { "type": "Point", "coordinates": [ 78.4911588, 17.390579 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3184132017 }, "geometry": { "type": "Point", "coordinates": [ 78.4959277, 17.389948 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2857520139 }, "geometry": { "type": "Point", "coordinates": [ 78.4942286, 17.3863466 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3612566320 }, "geometry": { "type": "Point", "coordinates": [ 78.4990337, 17.394801 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 12898732306 }, "geometry": { "type": "Point", "coordinates": [ 78.4989743, 17.3942462 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2857520245 }, "geometry": { "type": "Point", "coordinates": [ 78.4961564, 17.3920533 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3631211470 }, "geometry": { "type": "Point", "coordinates": [ 78.4928083, 17.3891213 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2857520228 }, "geometry": { "type": "Point", "coordinates": [ 78.495225, 17.3902616 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 14000036134 }, "geometry": { "type": "Point", "coordinates": [ 78.4950359, 17.3867056 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 1557469943 }, "geometry": { "type": "Point", "coordinates": [ 78.4905083, 17.3951183 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 13285586166 }, "geometry": { "type": "Point", "coordinates": [ 78.4986059, 17.3916809 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 13285586166 }, "geometry": { "type": "Point", "coordinates": [ 78.4989544, 17.3916885 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3612562566 }, "geometry": { "type": "Point", "coordinates": [ 78.4956703, 17.3870505 ] } },
+{ "type": "Feature", "properties": { "category": "grocery", "nearest_node": 13824528185 }, "geometry": { "type": "Point", "coordinates": [ 78.495687, 17.396621 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 12048730960 }, "geometry": { "type": "Point", "coordinates": [ 78.494712523751005, 17.396813079863239 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 3612566083 }, "geometry": { "type": "Point", "coordinates": [ 78.496317049999988, 17.3941739 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 1475178056 }, "geometry": { "type": "Point", "coordinates": [ 78.497825971201607, 17.393067047683878 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 308775917 }, "geometry": { "type": "Point", "coordinates": [ 78.49585318971107, 17.390053203726133 ] } }
+]
+}

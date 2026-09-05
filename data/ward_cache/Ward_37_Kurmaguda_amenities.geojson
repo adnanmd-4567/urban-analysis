@@ -1,0 +1,14 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_37_Kurmaguda_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 4193475446 }, "geometry": { "type": "Point", "coordinates": [ 78.5045484, 17.3593826 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 13327936006 }, "geometry": { "type": "Point", "coordinates": [ 78.504485, 17.3598544 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2859523099 }, "geometry": { "type": "Point", "coordinates": [ 78.4986596, 17.3578067 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 4196862953 }, "geometry": { "type": "Point", "coordinates": [ 78.5031067, 17.3603283 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2243960040 }, "geometry": { "type": "Point", "coordinates": [ 78.502022151184917, 17.355095380021758 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2859523328 }, "geometry": { "type": "Point", "coordinates": [ 78.498813746916227, 17.360044166206489 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2859521772 }, "geometry": { "type": "Point", "coordinates": [ 78.49976535, 17.3529177 ] } }
+]
+}

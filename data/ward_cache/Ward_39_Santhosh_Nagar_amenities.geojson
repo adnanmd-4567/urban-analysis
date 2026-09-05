@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_39_Santhosh_Nagar_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "grocery", "nearest_node": 3205677844 }, "geometry": { "type": "Point", "coordinates": [ 78.5084056, 17.3487653 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2244119384 }, "geometry": { "type": "Point", "coordinates": [ 78.5050942, 17.3512042 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3157569716 }, "geometry": { "type": "Point", "coordinates": [ 78.5081519, 17.3473229 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 3612547889 }, "geometry": { "type": "Point", "coordinates": [ 78.505949416440956, 17.349849297554496 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 3637038017 }, "geometry": { "type": "Point", "coordinates": [ 78.507011051405016, 17.347850222748864 ] } }
+]
+}

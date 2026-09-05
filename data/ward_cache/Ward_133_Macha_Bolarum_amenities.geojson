@@ -1,0 +1,21 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_133_Macha_Bolarum_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3598286300 }, "geometry": { "type": "Point", "coordinates": [ 78.5129142, 17.5175525 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 11575677843 }, "geometry": { "type": "Point", "coordinates": [ 78.5374779, 17.5274907 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 7088612586 }, "geometry": { "type": "Point", "coordinates": [ 78.5161065, 17.5325342 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 2783189284 }, "geometry": { "type": "Point", "coordinates": [ 78.5023071, 17.5131429 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 7688051940 }, "geometry": { "type": "Point", "coordinates": [ 78.4911548, 17.5139652 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3598285119 }, "geometry": { "type": "Point", "coordinates": [ 78.5137342, 17.513866 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 4182944262 }, "geometry": { "type": "Point", "coordinates": [ 78.5196324, 17.535336 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 7095802966 }, "geometry": { "type": "Point", "coordinates": [ 78.5160583, 17.5420888 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3471423170 }, "geometry": { "type": "Point", "coordinates": [ 78.5360979, 17.5255853 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3471423170 }, "geometry": { "type": "Point", "coordinates": [ 78.5366812, 17.5270508 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 11575677843 }, "geometry": { "type": "Point", "coordinates": [ 78.537682344310028, 17.528044317315395 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 7095914643 }, "geometry": { "type": "Point", "coordinates": [ 78.509743954434185, 17.538232341185811 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 3618925680 }, "geometry": { "type": "Point", "coordinates": [ 78.512598837555572, 17.525205131193701 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 3618935934 }, "geometry": { "type": "Point", "coordinates": [ 78.511130567794439, 17.536703569926793 ] } }
+]
+}

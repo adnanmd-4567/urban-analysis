@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_135_Venkatapuram_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "grocery", "nearest_node": 3598274791 }, "geometry": { "type": "Point", "coordinates": [ 78.4976953, 17.4844091 ] } },
+{ "type": "Feature", "properties": { "category": "pharmacy", "nearest_node": 12014419007 }, "geometry": { "type": "Point", "coordinates": [ 78.498359, 17.483744 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2221879544 }, "geometry": { "type": "Point", "coordinates": [ 78.5035278, 17.4933296 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2221878158 }, "geometry": { "type": "Point", "coordinates": [ 78.5018836, 17.4886942 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2221878947 }, "geometry": { "type": "Point", "coordinates": [ 78.502828135022398, 17.491596968060012 ] } }
+]
+}

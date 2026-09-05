@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_142_Addagutta_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2232016481 }, "geometry": { "type": "Point", "coordinates": [ 78.5104952, 17.4402089 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 1401094054 }, "geometry": { "type": "Point", "coordinates": [ 78.5218514, 17.44165 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2232016468 }, "geometry": { "type": "Point", "coordinates": [ 78.5049681, 17.4381142 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2232016468 }, "geometry": { "type": "Point", "coordinates": [ 78.5060866, 17.4389273 ] } },
+{ "type": "Feature", "properties": { "category": "grocery", "nearest_node": 3663312543 }, "geometry": { "type": "Point", "coordinates": [ 78.5382835, 17.4378229 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3680085446 }, "geometry": { "type": "Point", "coordinates": [ 78.5213253, 17.4439108 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3598259010 }, "geometry": { "type": "Point", "coordinates": [ 78.50656835, 17.43524325 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2232016468 }, "geometry": { "type": "Point", "coordinates": [ 78.50601944270764, 17.436517699026549 ] } },
+{ "type": "Feature", "properties": { "category": "grocery", "nearest_node": 3663312543 }, "geometry": { "type": "Point", "coordinates": [ 78.538280775710192, 17.437827205516836 ] } }
+]
+}

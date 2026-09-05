@@ -1,0 +1,18 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_55_Ramnaspura_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 11946838257 }, "geometry": { "type": "Point", "coordinates": [ 78.4501795, 17.3503764 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2857756290 }, "geometry": { "type": "Point", "coordinates": [ 78.4488768, 17.3471311 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2852505068 }, "geometry": { "type": "Point", "coordinates": [ 78.4567943, 17.3452876 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3612549590 }, "geometry": { "type": "Point", "coordinates": [ 78.4558855, 17.3539344 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2859870851 }, "geometry": { "type": "Point", "coordinates": [ 78.4522909, 17.3480065 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2857756290 }, "geometry": { "type": "Point", "coordinates": [ 78.4489057, 17.3471428 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 7710406751 }, "geometry": { "type": "Point", "coordinates": [ 78.447763497638917, 17.345202893860932 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2857758210 }, "geometry": { "type": "Point", "coordinates": [ 78.450348749139522, 17.345164670688316 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2852505405 }, "geometry": { "type": "Point", "coordinates": [ 78.455992217479789, 17.348533990206235 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 3612546400 }, "geometry": { "type": "Point", "coordinates": [ 78.448519483720148, 17.34365265002663 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2738997993 }, "geometry": { "type": "Point", "coordinates": [ 78.446496105346426, 17.358669586515195 ] } }
+]
+}

@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_48_Shalibanda_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3612547892 }, "geometry": { "type": "Point", "coordinates": [ 78.4707124, 17.3497123 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2856074959 }, "geometry": { "type": "Point", "coordinates": [ 78.4680874, 17.337349 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 9605237082 }, "geometry": { "type": "Point", "coordinates": [ 78.4696002, 17.3403461 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 308576589 }, "geometry": { "type": "Point", "coordinates": [ 78.4731667, 17.3400659 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 2857910097 }, "geometry": { "type": "Point", "coordinates": [ 78.4735935, 17.3399877 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 4267947312 }, "geometry": { "type": "Point", "coordinates": [ 78.4667217, 17.3474545 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 10807063893 }, "geometry": { "type": "Point", "coordinates": [ 78.47206790885501, 17.341313677849442 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2857910005 }, "geometry": { "type": "Point", "coordinates": [ 78.473338387406372, 17.3376756255416 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 11041706466 }, "geometry": { "type": "Point", "coordinates": [ 78.470488648368146, 17.339573999755405 ] } }
+]
+}

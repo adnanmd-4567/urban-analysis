@@ -1,0 +1,32 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_85_Adikmet_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 3612571044 }, "geometry": { "type": "Point", "coordinates": [ 78.5122245, 17.4054551 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 3612572282 }, "geometry": { "type": "Point", "coordinates": [ 78.5135035, 17.4075707 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3612572287 }, "geometry": { "type": "Point", "coordinates": [ 78.512174, 17.407574 ] } },
+{ "type": "Feature", "properties": { "category": "pharmacy", "nearest_node": 2234498701 }, "geometry": { "type": "Point", "coordinates": [ 78.5123242, 17.4074716 ] } },
+{ "type": "Feature", "properties": { "category": "pharmacy", "nearest_node": 11572148789 }, "geometry": { "type": "Point", "coordinates": [ 78.5096265, 17.4023937 ] } },
+{ "type": "Feature", "properties": { "category": "grocery", "nearest_node": 11972076768 }, "geometry": { "type": "Point", "coordinates": [ 78.5104316, 17.4047791 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 309707335 }, "geometry": { "type": "Point", "coordinates": [ 78.5143831, 17.4101591 ] } },
+{ "type": "Feature", "properties": { "category": "grocery", "nearest_node": 308943103 }, "geometry": { "type": "Point", "coordinates": [ 78.5122072, 17.4078715 ] } },
+{ "type": "Feature", "properties": { "category": "grocery", "nearest_node": 2234498701 }, "geometry": { "type": "Point", "coordinates": [ 78.5123011, 17.4075209 ] } },
+{ "type": "Feature", "properties": { "category": "pharmacy", "nearest_node": 308943103 }, "geometry": { "type": "Point", "coordinates": [ 78.5119846, 17.4077819 ] } },
+{ "type": "Feature", "properties": { "category": "grocery", "nearest_node": 2234832598 }, "geometry": { "type": "Point", "coordinates": [ 78.5099113, 17.4086546 ] } },
+{ "type": "Feature", "properties": { "category": "pharmacy", "nearest_node": 635720533 }, "geometry": { "type": "Point", "coordinates": [ 78.5096162, 17.4087775 ] } },
+{ "type": "Feature", "properties": { "category": "grocery", "nearest_node": 2234832598 }, "geometry": { "type": "Point", "coordinates": [ 78.5097718, 17.4087212 ] } },
+{ "type": "Feature", "properties": { "category": "pharmacy", "nearest_node": 11866164875 }, "geometry": { "type": "Point", "coordinates": [ 78.5105926, 17.4084729 ] } },
+{ "type": "Feature", "properties": { "category": "grocery", "nearest_node": 635720533 }, "geometry": { "type": "Point", "coordinates": [ 78.5095733, 17.4087826 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2234498724 }, "geometry": { "type": "Point", "coordinates": [ 78.5141903, 17.4078805 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2234832732 }, "geometry": { "type": "Point", "coordinates": [ 78.5084336, 17.4097327 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3612570337 }, "geometry": { "type": "Point", "coordinates": [ 78.5100617, 17.4030515 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 3612573554 }, "geometry": { "type": "Point", "coordinates": [ 78.5086124, 17.4096832 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 12025182830 }, "geometry": { "type": "Point", "coordinates": [ 78.5096907, 17.4030446 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 11972089069 }, "geometry": { "type": "Point", "coordinates": [ 78.5104584, 17.4048423 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 11972089069 }, "geometry": { "type": "Point", "coordinates": [ 78.5104807, 17.4049028 ] } },
+{ "type": "Feature", "properties": { "category": "pharmacy", "nearest_node": 308613905 }, "geometry": { "type": "Point", "coordinates": [ 78.5112743, 17.4057192 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 11042144766 }, "geometry": { "type": "Point", "coordinates": [ 78.505723104387172, 17.400508997749949 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2241236846 }, "geometry": { "type": "Point", "coordinates": [ 78.507053865806895, 17.407541160890002 ] } }
+]
+}

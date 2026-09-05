@@ -1,0 +1,29 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_132_Jeedimetla_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 12595518043 }, "geometry": { "type": "Point", "coordinates": [ 78.483146, 17.509976 ] } },
+{ "type": "Feature", "properties": { "category": "grocery", "nearest_node": 7701660237 }, "geometry": { "type": "Point", "coordinates": [ 78.4774555, 17.4997237 ] } },
+{ "type": "Feature", "properties": { "category": "grocery", "nearest_node": 11571981558 }, "geometry": { "type": "Point", "coordinates": [ 78.4829918, 17.5212099 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 11045693712 }, "geometry": { "type": "Point", "coordinates": [ 78.4754596, 17.5123618 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 1947070536 }, "geometry": { "type": "Point", "coordinates": [ 78.4822022, 17.5185239 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 12048883279 }, "geometry": { "type": "Point", "coordinates": [ 78.484531, 17.520925 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 11166496432 }, "geometry": { "type": "Point", "coordinates": [ 78.4724303, 17.5013314 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 3598284268 }, "geometry": { "type": "Point", "coordinates": [ 78.4759629, 17.5114641 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 11118303527 }, "geometry": { "type": "Point", "coordinates": [ 78.4755566, 17.4995239 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2434152062 }, "geometry": { "type": "Point", "coordinates": [ 78.4831209, 17.5218368 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3598283625 }, "geometry": { "type": "Point", "coordinates": [ 78.4788038, 17.5072656 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3598287554 }, "geometry": { "type": "Point", "coordinates": [ 78.482795, 17.5246107 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 7701973800 }, "geometry": { "type": "Point", "coordinates": [ 78.477497, 17.4997723 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2786023230 }, "geometry": { "type": "Point", "coordinates": [ 78.4602667, 17.5033348 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 5682121067 }, "geometry": { "type": "Point", "coordinates": [ 78.480475, 17.517046 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3598283164 }, "geometry": { "type": "Point", "coordinates": [ 78.4670243, 17.5057005 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 11882964895 }, "geometry": { "type": "Point", "coordinates": [ 78.4663926, 17.501953 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 7700947425 }, "geometry": { "type": "Point", "coordinates": [ 78.482223, 17.507399 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3598285828 }, "geometry": { "type": "Point", "coordinates": [ 78.4729028, 17.5152336 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2786982076 }, "geometry": { "type": "Point", "coordinates": [ 78.4632839, 17.5067008 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 3598283339 }, "geometry": { "type": "Point", "coordinates": [ 78.4648854, 17.5061113 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 12885855104 }, "geometry": { "type": "Point", "coordinates": [ 78.475152283740528, 17.501441866556611 ] } }
+]
+}

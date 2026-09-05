@@ -8,3 +8,8 @@ src/urban_analysis.egg-info/
 .idea/
 cache/
 .pytest_cache/
+data/*
+!data/ward_cache/
+!data/ward_results.csv
+!data/ward_scores_final.geojson
+!data/wards_hyderabad.geojson

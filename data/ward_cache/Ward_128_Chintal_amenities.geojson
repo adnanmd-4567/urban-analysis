@@ -1,0 +1,19 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_128_Chintal_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3602321533 }, "geometry": { "type": "Point", "coordinates": [ 78.4481992, 17.4900948 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3602325517 }, "geometry": { "type": "Point", "coordinates": [ 78.451227, 17.492517 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 2852309639 }, "geometry": { "type": "Point", "coordinates": [ 78.439312, 17.51508 ] } },
+{ "type": "Feature", "properties": { "category": "grocery", "nearest_node": 3602321533 }, "geometry": { "type": "Point", "coordinates": [ 78.4459299, 17.488934 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2852309251 }, "geometry": { "type": "Point", "coordinates": [ 78.4405168, 17.5128788 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3602325517 }, "geometry": { "type": "Point", "coordinates": [ 78.4454296, 17.4945555 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 3602325517 }, "geometry": { "type": "Point", "coordinates": [ 78.4512394, 17.4951547 ] } },
+{ "type": "Feature", "properties": { "category": "pharmacy", "nearest_node": 3602325517 }, "geometry": { "type": "Point", "coordinates": [ 78.4517913, 17.4940402 ] } },
+{ "type": "Feature", "properties": { "category": "pharmacy", "nearest_node": 3602325517 }, "geometry": { "type": "Point", "coordinates": [ 78.4517467, 17.4938765 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 6308390565 }, "geometry": { "type": "Point", "coordinates": [ 78.447051271891652, 17.510629391552612 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 3602325517 }, "geometry": { "type": "Point", "coordinates": [ 78.4500262, 17.49112465 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 3602325517 }, "geometry": { "type": "Point", "coordinates": [ 78.451242298969817, 17.49515513377348 ] } }
+]
+}

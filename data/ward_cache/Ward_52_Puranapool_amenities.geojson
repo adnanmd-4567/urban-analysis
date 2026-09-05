@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_52_Puranapool_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3612552589 }, "geometry": { "type": "Point", "coordinates": [ 78.4685625, 17.3623277 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 316964479 }, "geometry": { "type": "Point", "coordinates": [ 78.459544, 17.3639026 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3612553156 }, "geometry": { "type": "Point", "coordinates": [ 78.467482, 17.3628671 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2852506381 }, "geometry": { "type": "Point", "coordinates": [ 78.465631, 17.3618702 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 3612551186 }, "geometry": { "type": "Point", "coordinates": [ 78.4618808, 17.359681933333334 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 7712697458 }, "geometry": { "type": "Point", "coordinates": [ 78.4582531, 17.365989 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2852505980 }, "geometry": { "type": "Point", "coordinates": [ 78.464698633333327, 17.3568162 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2852506381 }, "geometry": { "type": "Point", "coordinates": [ 78.465488839122358, 17.361843455993235 ] } }
+]
+}

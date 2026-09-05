@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_45_Jangammet_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2857848740 }, "geometry": { "type": "Point", "coordinates": [ 78.4787576, 17.3292521 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3612544134 }, "geometry": { "type": "Point", "coordinates": [ 78.4698338, 17.3342065 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3612545724 }, "geometry": { "type": "Point", "coordinates": [ 78.4737962, 17.3414205 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 11050449137 }, "geometry": { "type": "Point", "coordinates": [ 78.4737816, 17.3371624 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 3612545909 }, "geometry": { "type": "Point", "coordinates": [ 78.474849277902067, 17.342409865643106 ] } }
+]
+}

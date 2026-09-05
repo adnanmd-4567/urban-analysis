@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_83_Amberpet_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 2236282399 }, "geometry": { "type": "Point", "coordinates": [ 78.5189191, 17.3832875 ] } },
+{ "type": "Feature", "properties": { "category": "grocery", "nearest_node": 4184941027 }, "geometry": { "type": "Point", "coordinates": [ 78.5289831, 17.3955329 ] } },
+{ "type": "Feature", "properties": { "category": "grocery", "nearest_node": 2234831984 }, "geometry": { "type": "Point", "coordinates": [ 78.5287694, 17.3957542 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 1316885639 }, "geometry": { "type": "Point", "coordinates": [ 78.5178213, 17.3921953 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3169797968 }, "geometry": { "type": "Point", "coordinates": [ 78.5290463, 17.3957378 ] } },
+{ "type": "Feature", "properties": { "category": "grocery", "nearest_node": 2234831984 }, "geometry": { "type": "Point", "coordinates": [ 78.5287934, 17.395655 ] } },
+{ "type": "Feature", "properties": { "category": "grocery", "nearest_node": 12704188662 }, "geometry": { "type": "Point", "coordinates": [ 78.5192259, 17.3923136 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 1316917869 }, "geometry": { "type": "Point", "coordinates": [ 78.526170284881488, 17.386971532546408 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 1316917869 }, "geometry": { "type": "Point", "coordinates": [ 78.526201105057666, 17.387037929011193 ] } }
+]
+}

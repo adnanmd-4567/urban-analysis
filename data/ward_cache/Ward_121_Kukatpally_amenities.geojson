@@ -1,0 +1,28 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_121_Kukatpally_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3602317228 }, "geometry": { "type": "Point", "coordinates": [ 78.4140886, 17.4884992 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2249842332 }, "geometry": { "type": "Point", "coordinates": [ 78.415377, 17.4953109 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 4208988658 }, "geometry": { "type": "Point", "coordinates": [ 78.4218974, 17.4860899 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 4208988658 }, "geometry": { "type": "Point", "coordinates": [ 78.4221791, 17.486072 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2249842204 }, "geometry": { "type": "Point", "coordinates": [ 78.4129804, 17.4847174 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3602313425 }, "geometry": { "type": "Point", "coordinates": [ 78.4198371, 17.4806758 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2852570291 }, "geometry": { "type": "Point", "coordinates": [ 78.4230078, 17.4973462 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2249842249 }, "geometry": { "type": "Point", "coordinates": [ 78.4161905, 17.4879209 ] } },
+{ "type": "Feature", "properties": { "category": "grocery", "nearest_node": 4208596993 }, "geometry": { "type": "Point", "coordinates": [ 78.4144712, 17.4874883 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 3602323315 }, "geometry": { "type": "Point", "coordinates": [ 78.4236659, 17.4986691 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2852570661 }, "geometry": { "type": "Point", "coordinates": [ 78.4240671, 17.4993644 ] } },
+{ "type": "Feature", "properties": { "category": "grocery", "nearest_node": 2249842122 }, "geometry": { "type": "Point", "coordinates": [ 78.419775423049572, 17.480691587619479 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 2710775676 }, "geometry": { "type": "Point", "coordinates": [ 78.413310833656723, 17.484133541576441 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 5759825700 }, "geometry": { "type": "Point", "coordinates": [ 78.423531033333319, 17.475839 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 4208728950 }, "geometry": { "type": "Point", "coordinates": [ 78.4165507, 17.494695 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 11572042054 }, "geometry": { "type": "Point", "coordinates": [ 78.425918766320635, 17.477896823087523 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 3602312490 }, "geometry": { "type": "Point", "coordinates": [ 78.424248920217451, 17.478507095492088 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 1578285705 }, "geometry": { "type": "Point", "coordinates": [ 78.426131337054599, 17.479353929195714 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2852570267 }, "geometry": { "type": "Point", "coordinates": [ 78.427879710468389, 17.496723117397405 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2249842352 }, "geometry": { "type": "Point", "coordinates": [ 78.416317784009323, 17.496215669831376 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2852570661 }, "geometry": { "type": "Point", "coordinates": [ 78.424075610288028, 17.499401359340574 ] } }
+]
+}

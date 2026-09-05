@@ -1,0 +1,18 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_137_Vinayak_Nagar_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 1044152008 }, "geometry": { "type": "Point", "coordinates": [ 78.5394748, 17.4751261 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 4013994527 }, "geometry": { "type": "Point", "coordinates": [ 78.5389222, 17.4657813 ] } },
+{ "type": "Feature", "properties": { "category": "grocery", "nearest_node": 4013994537 }, "geometry": { "type": "Point", "coordinates": [ 78.5380372, 17.4746433 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2988112433 }, "geometry": { "type": "Point", "coordinates": [ 78.5391736, 17.4699549 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2225436543 }, "geometry": { "type": "Point", "coordinates": [ 78.5406442, 17.4686391 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2225283325 }, "geometry": { "type": "Point", "coordinates": [ 78.5436054, 17.4693453 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 4014013280 }, "geometry": { "type": "Point", "coordinates": [ 78.5416693, 17.473323 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 7701038690 }, "geometry": { "type": "Point", "coordinates": [ 78.540627112253006, 17.475504875503802 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2225436172 }, "geometry": { "type": "Point", "coordinates": [ 78.537025129517659, 17.462873347587514 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 2225283555 }, "geometry": { "type": "Point", "coordinates": [ 78.543379464575679, 17.471090014021293 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 2225282774 }, "geometry": { "type": "Point", "coordinates": [ 78.544202698756905, 17.463804618768407 ] } }
+]
+}

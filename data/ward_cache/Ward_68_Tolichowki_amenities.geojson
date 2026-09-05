@@ -1,0 +1,17 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_68_Tolichowki_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "grocery", "nearest_node": 3579911604 }, "geometry": { "type": "Point", "coordinates": [ 78.4100829, 17.3957725 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 7693510810 }, "geometry": { "type": "Point", "coordinates": [ 78.4157502, 17.3977615 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 6829395489 }, "geometry": { "type": "Point", "coordinates": [ 78.4161649, 17.3983822 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2854452994 }, "geometry": { "type": "Point", "coordinates": [ 78.4175335, 17.3979236 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2852489815 }, "geometry": { "type": "Point", "coordinates": [ 78.4143068, 17.3985564 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2794237529 }, "geometry": { "type": "Point", "coordinates": [ 78.3974867, 17.3898815 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 11036593388 }, "geometry": { "type": "Point", "coordinates": [ 78.4187844, 17.3975199 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2852561143 }, "geometry": { "type": "Point", "coordinates": [ 78.41737393755308, 17.397187598454771 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2852561134 }, "geometry": { "type": "Point", "coordinates": [ 78.416371471232864, 17.396877861645848 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 11883376009 }, "geometry": { "type": "Point", "coordinates": [ 78.414970301503089, 17.398148848126073 ] } }
+]
+}

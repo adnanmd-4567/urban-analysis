@@ -1,0 +1,22 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_96_Yousufguda_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "grocery", "nearest_node": 354243455 }, "geometry": { "type": "Point", "coordinates": [ 78.4265727, 17.431848 ] } },
+{ "type": "Feature", "properties": { "category": "grocery", "nearest_node": 354243455 }, "geometry": { "type": "Point", "coordinates": [ 78.4265163, 17.4317354 ] } },
+{ "type": "Feature", "properties": { "category": "grocery", "nearest_node": 354243461 }, "geometry": { "type": "Point", "coordinates": [ 78.4272915, 17.4315716 ] } },
+{ "type": "Feature", "properties": { "category": "pharmacy", "nearest_node": 7682659526 }, "geometry": { "type": "Point", "coordinates": [ 78.428122, 17.4299365 ] } },
+{ "type": "Feature", "properties": { "category": "grocery", "nearest_node": 1312705954 }, "geometry": { "type": "Point", "coordinates": [ 78.425256, 17.430295 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 354243708 }, "geometry": { "type": "Point", "coordinates": [ 78.4266108, 17.4311263 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3602301581 }, "geometry": { "type": "Point", "coordinates": [ 78.4173229, 17.4343967 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 353720825 }, "geometry": { "type": "Point", "coordinates": [ 78.4365799, 17.4352974 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 11045832687 }, "geometry": { "type": "Point", "coordinates": [ 78.4272954, 17.437122 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 7682659549 }, "geometry": { "type": "Point", "coordinates": [ 78.4271117, 17.4299337 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 354243502 }, "geometry": { "type": "Point", "coordinates": [ 78.4275652, 17.432594 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 1312749541 }, "geometry": { "type": "Point", "coordinates": [ 78.4255515, 17.4332643 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 1312745042 }, "geometry": { "type": "Point", "coordinates": [ 78.424279650000017, 17.43072145 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 3602302219 }, "geometry": { "type": "Point", "coordinates": [ 78.415885230721386, 17.444282115675101 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 3602301051 }, "geometry": { "type": "Point", "coordinates": [ 78.430987373135238, 17.432256340325164 ] } }
+]
+}

@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_54_Jahanuma_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2852505049 }, "geometry": { "type": "Point", "coordinates": [ 78.4599543, 17.3448605 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2852505041 }, "geometry": { "type": "Point", "coordinates": [ 78.4590373, 17.3448357 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2852505495 }, "geometry": { "type": "Point", "coordinates": [ 78.4652696, 17.3503945 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3612545443 }, "geometry": { "type": "Point", "coordinates": [ 78.4647564, 17.3404725 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2180797404 }, "geometry": { "type": "Point", "coordinates": [ 78.449600666666669, 17.3367976 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 3390627841 }, "geometry": { "type": "Point", "coordinates": [ 78.465412823396932, 17.342723175917804 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 3612545970 }, "geometry": { "type": "Point", "coordinates": [ 78.463593537684488, 17.34265997193619 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2730615286 }, "geometry": { "type": "Point", "coordinates": [ 78.457065276924382, 17.337759151117204 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 308560863 }, "geometry": { "type": "Point", "coordinates": [ 78.462726210346148, 17.340296781319328 ] } }
+]
+}

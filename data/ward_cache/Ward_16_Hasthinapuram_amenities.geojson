@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_16_Hasthinapuram_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3186227081 }, "geometry": { "type": "Point", "coordinates": [ 78.5226278, 17.3389598 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 11555869322 }, "geometry": { "type": "Point", "coordinates": [ 78.557235, 17.3230275 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2249776553 }, "geometry": { "type": "Point", "coordinates": [ 78.556886, 17.324086 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3186227081 }, "geometry": { "type": "Point", "coordinates": [ 78.52185, 17.3401158 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 3598381362 }, "geometry": { "type": "Point", "coordinates": [ 78.5542394, 17.3272568 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2247659910 }, "geometry": { "type": "Point", "coordinates": [ 78.5361572, 17.3319163 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2247659736 }, "geometry": { "type": "Point", "coordinates": [ 78.5388646, 17.3285147 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2247609178 }, "geometry": { "type": "Point", "coordinates": [ 78.5367482, 17.3327926 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 2249699199 }, "geometry": { "type": "Point", "coordinates": [ 78.553263347526794, 17.328728188707931 ] } }
+]
+}

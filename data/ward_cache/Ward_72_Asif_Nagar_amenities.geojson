@@ -1,0 +1,20 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_72_Asif_Nagar_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2854814875 }, "geometry": { "type": "Point", "coordinates": [ 78.4477986, 17.3836488 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 308528920 }, "geometry": { "type": "Point", "coordinates": [ 78.439814290696319, 17.386515913090935 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 3579909350 }, "geometry": { "type": "Point", "coordinates": [ 78.438908194283272, 17.385035046668595 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 3579910014 }, "geometry": { "type": "Point", "coordinates": [ 78.437166629522281, 17.387998449051711 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 10717117560 }, "geometry": { "type": "Point", "coordinates": [ 78.439662403817238, 17.386146097093985 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 3612561854 }, "geometry": { "type": "Point", "coordinates": [ 78.440330506847417, 17.384191294513617 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2859817033 }, "geometry": { "type": "Point", "coordinates": [ 78.439498959514026, 17.383678434493767 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2859816892 }, "geometry": { "type": "Point", "coordinates": [ 78.439676293265393, 17.382524025977862 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2859816880 }, "geometry": { "type": "Point", "coordinates": [ 78.440928025140678, 17.38235168584599 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 3612561484 }, "geometry": { "type": "Point", "coordinates": [ 78.454420225835662, 17.383073925441593 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2854814886 }, "geometry": { "type": "Point", "coordinates": [ 78.446970402829407, 17.384137800867546 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 364283531 }, "geometry": { "type": "Point", "coordinates": [ 78.4500177, 17.38552055 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 1314204722 }, "geometry": { "type": "Point", "coordinates": [ 78.43596891004313, 17.387128389893814 ] } }
+]
+}

@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_62_Ziaguda_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 316980718 }, "geometry": { "type": "Point", "coordinates": [ 78.4546861, 17.3673977 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 316970818 }, "geometry": { "type": "Point", "coordinates": [ 78.443765951641254, 17.371493250327593 ] } }
+]
+}

@@ -1,0 +1,19 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_139_East_Anand_Bagh_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 1333831617 }, "geometry": { "type": "Point", "coordinates": [ 78.5383502, 17.446158 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 7701796988 }, "geometry": { "type": "Point", "coordinates": [ 78.5465732, 17.4571109 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 1333831617 }, "geometry": { "type": "Point", "coordinates": [ 78.5360288, 17.4466174 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 7701796995 }, "geometry": { "type": "Point", "coordinates": [ 78.5551228, 17.4570462 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 7712811900 }, "geometry": { "type": "Point", "coordinates": [ 78.5551261, 17.4384053 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 308933119 }, "geometry": { "type": "Point", "coordinates": [ 78.5373665, 17.4419366 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 308933119 }, "geometry": { "type": "Point", "coordinates": [ 78.5398556, 17.4436843 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2231529207 }, "geometry": { "type": "Point", "coordinates": [ 78.5606562, 17.4593413 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 4207005889 }, "geometry": { "type": "Point", "coordinates": [ 78.5548117, 17.4400902 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 308933119 }, "geometry": { "type": "Point", "coordinates": [ 78.539599218413414, 17.441193734045619 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 1333943365 }, "geometry": { "type": "Point", "coordinates": [ 78.542910646774715, 17.4543450857416 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 4207005889 }, "geometry": { "type": "Point", "coordinates": [ 78.554842806943441, 17.440292800248312 ] } }
+]
+}

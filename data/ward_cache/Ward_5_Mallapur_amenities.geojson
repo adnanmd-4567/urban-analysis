@@ -1,0 +1,22 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_5_Mallapur_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2803358295 }, "geometry": { "type": "Point", "coordinates": [ 78.5678539, 17.4455011 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2805343981 }, "geometry": { "type": "Point", "coordinates": [ 78.5789032, 17.4480216 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 2805343712 }, "geometry": { "type": "Point", "coordinates": [ 78.5668286, 17.4417857 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 3598309847 }, "geometry": { "type": "Point", "coordinates": [ 78.5644031, 17.4435951 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 2803358269 }, "geometry": { "type": "Point", "coordinates": [ 78.5654201, 17.4432797 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2805343965 }, "geometry": { "type": "Point", "coordinates": [ 78.5816815, 17.4471239 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2805343576 }, "geometry": { "type": "Point", "coordinates": [ 78.5720791, 17.4410992 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 2805343793 }, "geometry": { "type": "Point", "coordinates": [ 78.5725688, 17.4426793 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2805343600 }, "geometry": { "type": "Point", "coordinates": [ 78.5708623, 17.4416059 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3598308991 }, "geometry": { "type": "Point", "coordinates": [ 78.5793978, 17.4402569 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3598309570 }, "geometry": { "type": "Point", "coordinates": [ 78.5682656, 17.442346 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2805343971 }, "geometry": { "type": "Point", "coordinates": [ 78.5765503, 17.4457902 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2232107368 }, "geometry": { "type": "Point", "coordinates": [ 78.5562198, 17.4400379 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 4275616459 }, "geometry": { "type": "Point", "coordinates": [ 78.5537555, 17.4374845 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 2232107468 }, "geometry": { "type": "Point", "coordinates": [ 78.554842806943441, 17.440292800248312 ] } }
+]
+}

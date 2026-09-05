@@ -1,0 +1,30 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_22_Chaitanyapuri_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 9713100823 }, "geometry": { "type": "Point", "coordinates": [ 78.5301893, 17.3688309 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2245836108 }, "geometry": { "type": "Point", "coordinates": [ 78.5336681, 17.3720074 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 2245836023 }, "geometry": { "type": "Point", "coordinates": [ 78.5276043, 17.3694191 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 312819896 }, "geometry": { "type": "Point", "coordinates": [ 78.5276104, 17.3703144 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 312810343 }, "geometry": { "type": "Point", "coordinates": [ 78.5264074, 17.3707541 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 1598138330 }, "geometry": { "type": "Point", "coordinates": [ 78.5343739, 17.3688485 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 312819969 }, "geometry": { "type": "Point", "coordinates": [ 78.5358806, 17.3719492 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 312819970 }, "geometry": { "type": "Point", "coordinates": [ 78.5320289, 17.370156 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 312819896 }, "geometry": { "type": "Point", "coordinates": [ 78.5278568, 17.3700395 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 9713100817 }, "geometry": { "type": "Point", "coordinates": [ 78.5302386, 17.369612 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 312819964 }, "geometry": { "type": "Point", "coordinates": [ 78.5346776, 17.3692696 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2245836018 }, "geometry": { "type": "Point", "coordinates": [ 78.5292421, 17.3696005 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2245836104 }, "geometry": { "type": "Point", "coordinates": [ 78.5340057, 17.3716433 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2245836012 }, "geometry": { "type": "Point", "coordinates": [ 78.5299851, 17.3689234 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 9713096815 }, "geometry": { "type": "Point", "coordinates": [ 78.5314201, 17.3694424 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2245836037 }, "geometry": { "type": "Point", "coordinates": [ 78.5319766, 17.3697132 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 312819842 }, "geometry": { "type": "Point", "coordinates": [ 78.5275, 17.3707739 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 9713100823 }, "geometry": { "type": "Point", "coordinates": [ 78.5301608, 17.3690962 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 4201561419 }, "geometry": { "type": "Point", "coordinates": [ 78.5321014, 17.3715101 ] } },
+{ "type": "Feature", "properties": { "category": "grocery", "nearest_node": 312813230 }, "geometry": { "type": "Point", "coordinates": [ 78.5319211, 17.3692525 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 11932708145 }, "geometry": { "type": "Point", "coordinates": [ 78.5319807, 17.3733814 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 2245836023 }, "geometry": { "type": "Point", "coordinates": [ 78.527616499999979, 17.36941065 ] } },
+{ "type": "Feature", "properties": { "category": "pharmacy", "nearest_node": 2245836060 }, "geometry": { "type": "Point", "coordinates": [ 78.526944911756459, 17.370748031015342 ] } }
+]
+}

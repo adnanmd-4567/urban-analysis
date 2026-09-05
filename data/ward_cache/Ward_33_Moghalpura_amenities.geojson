@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_33_Moghalpura_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "grocery", "nearest_node": 7713256581 }, "geometry": { "type": "Point", "coordinates": [ 78.4737097, 17.3570114 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 7713256581 }, "geometry": { "type": "Point", "coordinates": [ 78.4738019, 17.3568423 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2852574334 }, "geometry": { "type": "Point", "coordinates": [ 78.4745425, 17.3535608 ] } },
+{ "type": "Feature", "properties": { "category": "pharmacy", "nearest_node": 7713256582 }, "geometry": { "type": "Point", "coordinates": [ 78.4736855, 17.3565667 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2859543990 }, "geometry": { "type": "Point", "coordinates": [ 78.4827353, 17.3524842 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 306605389 }, "geometry": { "type": "Point", "coordinates": [ 78.4785127, 17.3549315 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2859544005 }, "geometry": { "type": "Point", "coordinates": [ 78.4812468, 17.3526142 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2852574334 }, "geometry": { "type": "Point", "coordinates": [ 78.4745244, 17.3535776 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 14086758581 }, "geometry": { "type": "Point", "coordinates": [ 78.474776209484929, 17.351052137994095 ] } }
+]
+}

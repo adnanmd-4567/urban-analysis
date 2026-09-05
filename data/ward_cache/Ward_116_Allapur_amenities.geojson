@@ -1,0 +1,19 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_116_Allapur_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 3602307465 }, "geometry": { "type": "Point", "coordinates": [ 78.4002273, 17.4536899 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2822548721 }, "geometry": { "type": "Point", "coordinates": [ 78.4109138, 17.4566786 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2249841850 }, "geometry": { "type": "Point", "coordinates": [ 78.3993991, 17.4570001 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2249841810 }, "geometry": { "type": "Point", "coordinates": [ 78.4115501, 17.4566753 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 7701587981 }, "geometry": { "type": "Point", "coordinates": [ 78.4103806, 17.4564341 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 2822548728 }, "geometry": { "type": "Point", "coordinates": [ 78.4090537, 17.4569367 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 11082456169 }, "geometry": { "type": "Point", "coordinates": [ 78.4102699, 17.455937 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 7655106944 }, "geometry": { "type": "Point", "coordinates": [ 78.4087256, 17.454948 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3182362235 }, "geometry": { "type": "Point", "coordinates": [ 78.4023645, 17.4577166 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2249841929 }, "geometry": { "type": "Point", "coordinates": [ 78.4035873, 17.4590649 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 2249841812 }, "geometry": { "type": "Point", "coordinates": [ 78.412162717208062, 17.45644078424003 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 3602307414 }, "geometry": { "type": "Point", "coordinates": [ 78.400183970164278, 17.453521817641139 ] } }
+]
+}

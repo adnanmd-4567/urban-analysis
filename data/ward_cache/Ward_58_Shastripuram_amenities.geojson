@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_58_Shastripuram_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 7699512313 }, "geometry": { "type": "Point", "coordinates": [ 78.4417631, 17.3334672 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2718862860 }, "geometry": { "type": "Point", "coordinates": [ 78.4381547, 17.3274111 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 6443012780 }, "geometry": { "type": "Point", "coordinates": [ 78.4473761, 17.3336142 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 6443012773 }, "geometry": { "type": "Point", "coordinates": [ 78.4467512, 17.3342503 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 308576660 }, "geometry": { "type": "Point", "coordinates": [ 78.4443247, 17.3373453 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2852998339 }, "geometry": { "type": "Point", "coordinates": [ 78.442592, 17.3377885 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2180797404 }, "geometry": { "type": "Point", "coordinates": [ 78.449600666666669, 17.3367976 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 4002275058 }, "geometry": { "type": "Point", "coordinates": [ 78.441203014410632, 17.325018277045601 ] } }
+]
+}

@@ -1,0 +1,18 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_86_Musheerabad_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 6556696223 }, "geometry": { "type": "Point", "coordinates": [ 78.5095004, 17.4176317 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 3674531683 }, "geometry": { "type": "Point", "coordinates": [ 78.5098124, 17.4176605 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 7684710151 }, "geometry": { "type": "Point", "coordinates": [ 78.5089141, 17.417178 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 2234499238 }, "geometry": { "type": "Point", "coordinates": [ 78.5072533, 17.4138534 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 2234499238 }, "geometry": { "type": "Point", "coordinates": [ 78.5069595, 17.4136595 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 3612574808 }, "geometry": { "type": "Point", "coordinates": [ 78.5077226, 17.4131508 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2234499255 }, "geometry": { "type": "Point", "coordinates": [ 78.5061651, 17.4140362 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2234275379 }, "geometry": { "type": "Point", "coordinates": [ 78.505518, 17.4162589 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 3612574954 }, "geometry": { "type": "Point", "coordinates": [ 78.511193619772257, 17.413282589560048 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 2234499238 }, "geometry": { "type": "Point", "coordinates": [ 78.507247795991688, 17.413847768259384 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 3612574882 }, "geometry": { "type": "Point", "coordinates": [ 78.506730102665955, 17.41337344967927 ] } }
+]
+}

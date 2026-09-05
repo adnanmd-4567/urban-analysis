@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_63_Mangalhat_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 2852234205 }, "geometry": { "type": "Point", "coordinates": [ 78.455051, 17.3776344 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 7702268813 }, "geometry": { "type": "Point", "coordinates": [ 78.4553151, 17.3700946 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2852234365 }, "geometry": { "type": "Point", "coordinates": [ 78.4562354, 17.3841667 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 3612560039 }, "geometry": { "type": "Point", "coordinates": [ 78.4590317, 17.3785916 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 11052249140 }, "geometry": { "type": "Point", "coordinates": [ 78.458118536450399, 17.372623420722967 ] } },
+{ "type": "Feature", "properties": { "category": "school", "nearest_node": 2852234346 }, "geometry": { "type": "Point", "coordinates": [ 78.454420225835662, 17.383073925441593 ] } }
+]
+}

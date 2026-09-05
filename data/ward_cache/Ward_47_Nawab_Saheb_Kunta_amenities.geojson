@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "Ward_47_Nawab_Saheb_Kunta_amenities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2730615418 }, "geometry": { "type": "Point", "coordinates": [ 78.4594635, 17.3388251 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2730615046 }, "geometry": { "type": "Point", "coordinates": [ 78.4602839, 17.3354944 ] } },
+{ "type": "Feature", "properties": { "category": "hospital", "nearest_node": 2730614829 }, "geometry": { "type": "Point", "coordinates": [ 78.4571412, 17.3339005 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 3612545039 }, "geometry": { "type": "Point", "coordinates": [ 78.463699153367713, 17.338722811759691 ] } },
+{ "type": "Feature", "properties": { "category": "park", "nearest_node": 12452732810 }, "geometry": { "type": "Point", "coordinates": [ 78.462726210346148, 17.340296781319328 ] } }
+]
+}
