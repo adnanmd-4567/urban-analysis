@@ -13,3 +13,4 @@ data/*
 !data/ward_results.csv
 !data/ward_scores_final.geojson
 !data/wards_hyderabad.geojson
+frontend/access_map.html
