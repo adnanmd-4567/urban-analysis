@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Urban Access Atlas — Hyderabad</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ink: #1B2430;
+            --parchment: #E8E2D4;
+            --sienna: #C1440E;
+            --muted: #5B5647;
+            --panel: rgba(27, 36, 48, 0.94);
+        }
+        * { box-sizing: border-box; }
+        html, body {
+            margin: 0;
+            height: 100%;
+            font-family: 'IBM Plex Sans', sans-serif;
+            color: var(--parchment);
+        }
+        #map { position: absolute; inset: 0; }
+
+        /* ---- top bar: thin, translucent, floats over the map ---- */
+        #topbar {
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 14px 10px;
+            background: transparent;
+            pointer-events: none;
+        }
+        #topbar > * { pointer-events: auto; }
+        #brand h1 {
+            font-family: 'Fraunces', serif;
+            font-weight: 600;
+            font-size: 40px;
+            margin: 0;
+            color: #081527;
+        }
+        #brand .subtitle {
+            font-size: 15px;
+            color: var(--parchment);
+            opacity: 0.7;
+            margin-top: 2px;
+        }
+        #controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        select {
+            padding: 8px 10px;
+            border-radius: 6px;
+            border: 1px solid rgba(232,226,212,0.25);
+            background: var(--ink);
+            color: #fff;
+            font-size: 13px;
+            font-family: inherit;
+        }
+        #simulate-toggle {
+            padding: 8px 14px;
+            border-radius: 6px;
+            border: none;
+            background: var(--sienna);
+            color: #fff;
+            font-weight: 600;
+            font-size: 13px;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        #simulate-toggle.active { background: #8f3009; }
+
+        /* ---- floating legend, bottom-left, collapsible ---- */
+        #legend {
+            position: absolute;
+            bottom: 20px; left: 20px;
+            z-index: 1000;
+            background: var(--panel);
+            border: 1px solid rgba(232,226,212,0.15);
+            border-radius: 4px;
+            padding: 12px 14px;
+            font-size: 12.5px;
+            width: 230px;
+        }
+        #legend h2 {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--parchment);
+            opacity: 0.75;
+            margin: 0 0 8px 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+        }
+        #legend .legend-body { display: flex; flex-direction: column; gap: 10px; }
+        #legend .legend-body.collapsed { display: none; }
+        .legend-row { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+        .swatch { width: 11px; height: 11px; border-radius: 2px; flex-shrink: 0; }
+        .legend-section { border-top: 1px solid rgba(232,226,212,0.12); padding-top: 8px; }
+
+        /* ---- slide-in result panel, right side, hidden by default ---- */
+        #result-panel {
+            position: absolute;
+            top: 0; right: 0; bottom: 0;
+            z-index: 1000;
+            width: 300px;
+            background: var(--panel);
+            border-left: 1px solid rgba(232,226,212,0.15);
+            padding: 76px 20px 20px 20px;
+            transform: translateX(100%);
+            transition: transform 0.25s ease;
+        }
+        #result-panel.open { transform: translateX(0); }
+        #result-panel h2 {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: var(--parchment);
+            opacity: 0.6;
+            margin: 0 0 14px 0;
+        }
+        #result-panel .ward-name {
+            font-family: 'Fraunces', serif;
+            font-size: 17px;
+            font-weight: 600;
+            color: #fff;
+        }
+        #result .stat-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            margin-top: 10px;
+            font-variant-numeric: tabular-nums;
+        }
+        #result .stat-row .value { font-family: 'IBM Plex Mono', monospace; font-size: 13px; }
+        #result .delta {
+            margin-top: 14px;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 22px;
+            font-weight: 500;
+        }
+        .delta-pos { color: #7cc98f; }
+        .delta-neg { color: #e08585; }
+        .spinner {
+            display: inline-block;
+            width: 13px; height: 13px;
+            border: 2px solid rgba(232,226,212,0.25);
+            border-top-color: var(--sienna);
+            border-radius: 50%;
+            animation: spin 0.7s linear infinite;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .warning-note {
+            margin-top: 12px;
+            font-size: 12px;
+            color: #e0b96a;
+            line-height: 1.4;
+        }
+        #close-panel {
+            position: absolute;
+            top: 20px; right: 18px;
+            background: none; border: none;
+            color: var(--parchment); opacity: 0.6;
+            font-size: 18px; cursor: pointer; line-height: 1;
+        }
+        .hint {
+            font-size: 12px;
+            color: var(--parchment);
+            opacity: 0.55;
+            margin-top: 10px;
+            line-height: 1.4;
+        }
+        .placeholder { font-size: 13px; opacity: 0.5; }
+
+        /* ---- Leaflet popup / ward style ---- */
+        .leaflet-popup-content-wrapper {
+            border-radius: 4px;
+            font-family: 'IBM Plex Sans', sans-serif;
+            background: var(--panel);
+            color: var(--parchment);
+        }
+        .leaflet-popup-tip { background: var(--panel); }
+        .ward-popup .name { font-family: 'Fraunces', serif; font-size: 15px; font-weight: 600; color: #fff; }
+        .ward-popup .row { font-size: 12.5px; opacity: 0.85; margin-top: 4px; }
+        .ward-popup .row .value { font-family: 'IBM Plex Mono', monospace; }
+        .ward-popup .hotspot-desc { font-size: 11.5px; opacity: 0.6; margin-top: 2px; }
+
+        #ward-search {
+            padding: 8px 10px;
+            border-radius: 6px;
+            border: 1px solid rgba(232,226,212,0.25);
+            background: var(--ink);
+            color: #fff;
+            font-size: 13px;
+            font-family: inherit;
+            width: 170px;
+        }
+
+        #ward-search::placeholder { color: rgba(232,226,212,0.5); }
+
+        /* #summary-strip {
+            position: absolute;
+            top: 70px; right: 20px;
+            z-index: 1000;
+            background: var(--panel);
+            border: 1px solid rgba(232,226,212,0.15);
+            border-radius: 4px;
+            padding: 10px 16px;
+            display: flex;
+            gap: 20px;
+            font-size: 12px;
+        }
+        #summary-strip .stat { text-align: center; }
+        #summary-strip .stat .num {     
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 16px;
+            font-weight: 500;
+            color: #fff;
+            display: block;
+        }
+        #summary-strip .stat .label { opacity: 0.65; margin-top: 2px; } */
+        .takeaway { font-size: 12.5px; opacity: 0.8; margin-top: 10px; line-height: 1.4; }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <div id="topbar">
+        <div id="brand">
+            <h1>Urban Analysis - Hyderabad</h1>
+            <div class="subtitle"></div>
+        </div>
+        <div id="controls">
+            <input list="ward-list" id="ward-search" placeholder="Jump to a ward…" autocomplete="on">
+            <datalist id="ward-list"></datalist>
+            <select id="category-select">
+                <option value="hospital">Hospital</option>
+                <option value="pharmacy">Pharmacy</option>
+                <option value="school">School</option>
+                <option value="park">Park</option>
+                <option value="grocery">Grocery</option>
+            </select>
+            <button id="layer-toggle" style="padding:8px 12px;border-radius:6px;border:1px solid rgba(232,226,212,0.25);background:#07294d;color:#fff;cursor:pointer;"">View: Access Index</button>
+            <button id="simulate-toggle">Start simulation</button>
+            <!-- <button id="clear-pins">Clear pins</button> -->
+            <button id="info-toggle" style="padding:8px 12px;border-radius:6px;border:1px solid rgba(232,226,212,0.25);background:#07294d;color:#fff;cursor:pointer;">Glossary</button>
+        </div>
+        <div id="info-panel" style="display:none;position:absolute;top:70px;right:20px;z-index:1001;background:var(--panel);border-radius:6px;padding:16px;width:320px;font-size:13px;line-height:1.5;">
+            <b>Access Index</b> : a 0–100 normalized composite score of how many schools, hospitals, parks, and groceries are reachable within a 15-minute walk.<br><br>
+            <b>Intersection %</b> : The share of street network nodes that are real intersections (3+ connecting streets), a proxy for how walkable/connected a ward's street layout is.<br><br>
+            <b>Hotspot</b> : Whether a ward's access score forms a statistically real cluster with its neighbors.
+        </div>
+    </div>
+
+    <!-- <div id="summary-strip"></div> -->
+
+    <div id="legend">
+        <h2 id="legend-toggle">Legend <span id="legend-arrow">▾</span></h2>
+        <div class="legend-body" id="legend-body">
+            <div>
+                <div class="legend-row"><div class="swatch" style="background:#1a9850"></div> 60–100 · Well served</div>
+                <div class="legend-row"><div class="swatch" style="background:#91cf60"></div> 45–60</div>
+                <div class="legend-row"><div class="swatch" style="background:#fee08b"></div> 30–45</div>
+                <div class="legend-row"><div class="swatch" style="background:#fc8d59"></div> 15–30</div>
+                <div class="legend-row"><div class="swatch" style="background:#d73027"></div> 0–15 · Underserved</div>
+            </div>
+            <div class="legend-section">
+                <div class="legend-row"><div class="swatch" style="background:#d73027"></div> High-High · well-served cluster</div>
+                <div class="legend-row"><div class="swatch" style="background:#4575b4"></div> Low-Low · underserved cluster</div>
+                <div class="legend-row"><div class="swatch" style="background:#888"></div> High-Low · outlier</div>
+                <div class="legend-row"><div class="swatch" style="background:#abd9e9"></div> Low-High · outlier</div>
+                <div class="legend-row"><div class="swatch" style="background:#fdae61"></div> Not significant</div>
+            </div>
+            <div class="hint">Click "Start simulation," then click the map to test a new location.</div>
+        </div>
+    </div>
+
+    <div id="result-panel">
+        <button id="close-panel">✕</button>
+        <h2>Simulation result</h2>
+        <div id="result"><span class="placeholder">Click the map to run a simulation.</span></div>
+    </div>
+
+    <!-- This frontend expects the FastAPI backend (api/main.py) running separately — update the /wards 
+        and /simulate fetch URLs below if the backend isn't on localhost:8000.
+    -->
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        const wardLayers = {};
+        // let allAccessValues = []; 
+        const hotspotDescriptions = {
+            'High-High': 'well-served cluster — this ward and its neighbors are all doing well',
+            'Low-Low': 'underserved cluster — this ward and its neighbors are all struggling',
+            'High-Low': 'outlier — well-served, but surrounded by underserved wards',
+            'Low-High': 'outlier — underserved, but surrounded by well-served wards',
+            'Not significant': 'no statistically significant clustering pattern',
+        };
+        function getTakeaway(delta, category) {
+            if (delta > 5) return `Meaningful improvement, This spot is currently underserved for ${category}.`;
+            if (delta > 1) return `Modest improvement, Some benefit, but not a priority location.`;
+            if (delta > 0) return `Minimal effect, This area already has reasonable ${category} access.`;
+            return `No measurable change, This spot may already be saturated for ${category}.`;
+        }
+
+        // function percentileRank(value) {
+        //     const below = allAccessValues.filter(v => v < value).length;
+        //     return Math.round((below / allAccessValues.length) * 100);
+        // }
+
+        const map = L.map('map', { zoomControl: false }).setView([17.42, 78.44], 13);
+        L.control.zoom({ position: 'bottomright' }).addTo(map);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        function getColor(accessIndex) {
+            if (accessIndex > 60) return '#1a9850';
+            if (accessIndex > 45) return '#91cf60';
+            if (accessIndex > 30) return '#fee08b';
+            if (accessIndex > 15) return '#fc8d59';
+            return '#d73027';
+        }
+
+        function getHotspotColor(label) {
+            const colors = { 'High-High': '#d73027', 'Low-Low': '#4575b4', 'High-Low': '#888', 'Low-High': '#abd9e9', 'Not significant': '#fdae61' };
+            return colors[label] || '#888';
+        }
+        
+        let mapViewMode = 'access'; // or 'hotspot'
+        function styleWard(feature) {
+            const color = mapViewMode === 'access'
+                ? getColor(feature.properties.mean_access_index)
+                : getHotspotColor(feature.properties.hotspot_label);
+            return { fillColor: color, weight: 1.2, color: '#E8E2D4', opacity: 0.3, fillOpacity: 0.6 };
+        }
+
+        function onEachWard(feature, layer) {
+            const p = feature.properties;
+            wardLayers[p.Name] = layer;
+            const desc = hotspotDescriptions[p.hotspot_label] || '';
+            layer.bindPopup(`
+                <div class="ward-popup">
+                    <div class="name">${p.Name}</div>
+                    <div class="row">Access Index: <span class="value">${p.mean_access_index.toFixed(1)}</span></div>
+                    <div class="row">Hotspot: ${p.hotspot_label}</div>
+                    <div class="hotspot-desc">${desc}</div>
+                    <div class="row">Intersection %: <span class="value">${p.intersection_share.toFixed(1)}</span></div>
+                </div>
+            `);
+            layer.on('mouseover', function() { layer.setStyle({ fillOpacity: 0.8, weight: 2 }); });
+            layer.on('mouseout', function() { layer.setStyle({ fillOpacity: 0.6, weight: 1.2 }); });
+            layer.on('click', function(e) {
+                if (simulationMode) runSimulation(e.latlng);
+            });
+        }
+
+        fetch('http://127.0.0.1:8000/wards')
+            .then(response => response.json())
+            .then(data => {
+                // L.geoJSON(data, { style: styleWard, onEachFeature: onEachWard }).addTo(map);
+                wardLayer = L.geoJSON(data, { style: styleWard, onEachFeature: onEachWard }).addTo(map);
+                // allAccessValues = data.features.map(f => f.properties.mean_access_index).sort((a, b) => a - b);
+                const datalist = document.getElementById('ward-list');
+                data.features.forEach(f => {
+                    const opt = document.createElement('option');
+                    opt.value = f.properties.Name;
+                datalist.appendChild(opt);
+                });
+
+                document.getElementById('ward-search').addEventListener('change', function(e) {
+                    const layer = wardLayers[e.target.value];
+                    if (layer) {
+                        map.fitBounds(layer.getBounds());
+                        layer.openPopup();
+                    }
+                    e.target.value = '';
+                });
+                // const total = data.features.length;
+                // const meanAccess = data.features.reduce((s, f) => s + f.properties.mean_access_index, 0) / total;
+                // const significantCount = data.features.filter(f => f.properties.hotspot_label !== 'Not significant').length;
+                // const underservedCount = data.features.filter(f => f.properties.mean_access_index < 30).length;
+
+                // document.getElementById('summary-strip').innerHTML = `
+                //     <div class="stat"><span class="num">${meanAccess.toFixed(1)}</span><span class="label">avg access</span></div>
+                //     <div class="stat"><span class="num">${significantCount}</span><span class="label">hotspots</span></div>
+                //     <div class="stat"><span class="num">${underservedCount}</span><span class="label">underserved</span></div>
+                // `;
+            })
+        .catch(error => console.error('Failed to load wards:', error));
+
+        // in the result panel, after Before/After rows:
+
+        const resultPanel = document.getElementById('result-panel');
+        document.getElementById('close-panel').addEventListener('click', function() {
+            resultPanel.classList.remove('open');
+        });
+
+        let simulationMarkers = [];
+        function runSimulation(latlng) {
+            const category = document.getElementById('category-select').value;
+            const resultDiv = document.getElementById('result');
+            resultPanel.classList.add('open');
+            resultDiv.innerHTML = '<span class="spinner"></span>Calculating…';
+            fetch('http://127.0.0.1:8000/simulate', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ lon: latlng.lng, lat: latlng.lat, category: category }),
+            })
+                .then(response => {
+                    if (!response.ok) return response.json().then(err => { throw new Error(err.detail || 'Request failed'); });
+                    return response.json();
+                })
+                .then(data => {
+                    const deltaClass = data.delta >= 0 ? 'delta-pos' : 'delta-neg';
+                    const sign = data.delta >= 0 ? '+' : '';
+                    const warning = data.already_exists_nearby
+                        ? `<div class="warning-note">⚠ A ${category} already exists within ~100m of this point</div>`
+                        : '';
+                    let catchmentCircle = null;
+                    // inside runSimulation, after getting a successful response:
+                    // if (catchmentCircle) map.removeLayer(catchmentCircle);
+                    // catchmentCircle = L.circle(latlng, {
+                    //     radius: 1200, // ~15 min walk at average pace; adjust to match your actual TIME_CUTOFF
+                    //     color: '#C1440E', fillColor: '#C1440E', fillOpacity: 0.08, weight: 1, dashArray: '4,4'
+                    // }).addTo(map);
+                    resultDiv.innerHTML = `
+                        <div class="ward-name">${data.ward}</div>
+                        <div class="stat-row"><span>Access before adding amenity :</span><span class="value">${data.access_index_before.toFixed(1)}</span></div>
+                        <div class="stat-row"><span>Access after adding amenity :</span><span class="value">${data.access_index_after.toFixed(1)}</span></div>
+                        <div class="delta ${deltaClass}">Improvement : ${sign}${data.delta.toFixed(1)}</div>
+                        <div class="stat-row" style="margin-top:16px;"><span>${category}s reachable (avg, nearby) — before</span><span class="value">${data.category_count_before.toFixed(1)}</span></div>
+                        <div class="stat-row"><span>${category}s reachable (avg, nearby) — after</span><span class="value">${data.category_count_after.toFixed(1)}</span></div>
+                        <div class="takeaway">${getTakeaway(data.delta, category)}</div>
+                        ${warning}
+                    `;
+                    // L.marker(latlng).addTo(map).bindPopup(`Hypothetical ${category}`).openPopup();
+                    const marker = L.marker(latlng).addTo(map).bindPopup(`Hypothetical ${category}`).openPopup();
+                    simulationMarkers.forEach(m => map.removeLayer(m));
+                    simulationMarkers = [];
+                    simulationMarkers.push(marker);
+
+                })
+                .catch(error => {
+                    resultDiv.innerHTML = `<span class="placeholder">${error.message}</span>`;
+                });
+        }
+
+        let wardLayer; // store reference so we can restyle it
+        document.getElementById('layer-toggle').addEventListener('click', function() {
+            mapViewMode = mapViewMode === 'access' ? 'hotspot' : 'access';
+            this.textContent = mapViewMode === 'access' ? 'View: Access Index' : 'View: Hotspot';
+            wardLayer.setStyle(styleWard);
+        });
+
+        let simulationMode = false;
+        const toggleBtn = document.getElementById('simulate-toggle');
+        const mapContainer = document.getElementById('map');
+        toggleBtn.addEventListener('click', function() {
+            simulationMode = !simulationMode;
+            toggleBtn.classList.toggle('active', simulationMode);
+            toggleBtn.textContent = simulationMode ? 'Cancel simulation' : 'Start simulation';
+            mapContainer.style.cursor = simulationMode ? 'crosshair' : '';
+        });
+        map.on('click', function(e) {
+            if (simulationMode) runSimulation(e.latlng);
+        });
+
+        const legendToggle = document.getElementById('legend-toggle');
+        const legendBody = document.getElementById('legend-body');
+        const legendArrow = document.getElementById('legend-arrow');
+        legendToggle.addEventListener('click', function() {
+            legendBody.classList.toggle('collapsed');
+            legendArrow.textContent = legendBody.classList.contains('collapsed') ? '▸' : '▾';
+        });
+        document.getElementById('info-toggle').addEventListener('click', function() {
+            const panel = document.getElementById('info-panel');
+            panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+        });
+        document.getElementById('clear-pins').addEventListener('click', function() {
+            simulationMarkers.forEach(m => map.removeLayer(m));
+            simulationMarkers = [];
+        });
+    </script>
+</body>
+</html>
