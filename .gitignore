@@ -1,0 +1,8 @@
+venv/ 
+__pycache__/ 
+*.pyc 
+src/urban_analysis.egg-info/ 
+.env 
+*.pbf
+.vscode/
+.idea/
