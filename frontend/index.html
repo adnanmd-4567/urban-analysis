@@ -363,7 +363,7 @@
             });
         }
 
-        fetch('http://127.0.0.1:8000/wards')
+        fetch('https://urban-analysis.onrender.com/wards')
             .then(response => response.json())
             .then(data => {
                 // L.geoJSON(data, { style: styleWard, onEachFeature: onEachWard }).addTo(map);
@@ -410,7 +410,7 @@
             const resultDiv = document.getElementById('result');
             resultPanel.classList.add('open');
             resultDiv.innerHTML = '<span class="spinner"></span>Calculating…';
-            fetch('http://127.0.0.1:8000/simulate', {
+            fetch('https://urban-analysis.onrender.com/simulate', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ lon: latlng.lng, lat: latlng.lat, category: category }),
