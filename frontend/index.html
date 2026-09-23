@@ -318,8 +318,6 @@
 
             #info-panel {
                 position: fixed !important;
-                top: auto !important;
-                bottom: 12px !important;
                 left: 12px !important;
                 right: 12px !important;
                 width: auto !important;
@@ -495,7 +493,7 @@
         function runSimulation(latlng) {
             const category = document.getElementById('category-select').value;
             resultPanel.classList.add('open');
-            resultDiv.innerHTML = '<span class="spinner"></span>Calculating…';
+            resultDiv.innerHTML = '<span class="spinner"></span>Running the accessibility simulation — this can take a few seconds.';
             fetch(API_BASE + '/simulate', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -564,7 +562,17 @@
 
         document.getElementById('info-toggle').addEventListener('click', function() {
             const panel = document.getElementById('info-panel');
-            panel.style.display = panel.style.display === 'none' || !panel.style.display ? 'block' : 'none';
+            const isOpen = panel.style.display === 'block';
+            if (isOpen) {
+                panel.style.display = 'none';
+                return;
+            }
+            if (window.innerWidth <= 700) {
+                const topbarRect = document.getElementById('topbar').getBoundingClientRect();
+                panel.style.top = (topbarRect.bottom + 8) + 'px';
+                panel.style.bottom = 'auto';
+            }
+            panel.style.display = 'block';
         });
     </script>
 </body>
