@@ -1,6 +1,7 @@
 # API serving precomputed ward scores, plus a live what-if simulation.
 
 import pickle
+import time
 from pathlib import Path
 import geopandas as gpd
 import networkx as nx
@@ -11,7 +12,7 @@ from shapely.geometry import Point
 from shapely.geometry import Point as ShapelyPoint
 from urban_analysis.config import TIME_CUTOFF_SECONDS
 from urban_analysis.network import add_hypothetical_amenity
-from urban_analysis.scoring import score_all_points, normalize_and_combine, normalize_with_fixed_bounds
+from urban_analysis.scoring import score_all_points_fast, normalize_and_combine, normalize_with_fixed_bounds
 from urban_analysis.wards import load_wards
 
 CATEGORIES = ["grocery", "hospital", "pharmacy", "park", "school"]
@@ -74,9 +75,11 @@ def simulate(req: SimulationRequest):
     if not cache_graph_path.exists():
         raise HTTPException(500, f"No cached data for {ward_name} — run build_all_wards.py first")
 
+    t0 = time.time()
     with open(cache_graph_path, "rb") as f:
         G = pickle.load(f)
     amenities = gpd.read_file(cache_amenities_path)
+    t1 = time.time()
 
     same_category = amenities[amenities["category"] == req.category]
     distances = same_category.geometry.distance(pin)  # degrees, since CRS is EPSG:4326
@@ -87,11 +90,13 @@ def simulate(req: SimulationRequest):
         G, new_node, cutoff=TIME_CUTOFF_SECONDS, weight="travel_time"
     ).keys())
 
-    scores_before = score_all_points(affected_nodes, G, amenities, categories=CATEGORIES)
+    scores_before = score_all_points_fast(affected_nodes, G, amenities, categories=CATEGORIES)
     scores_before = normalize_with_fixed_bounds(scores_before, CATEGORIES, bounds)
     amenities_after = add_hypothetical_amenity(amenities, req.lon, req.lat, req.category, G)
-    scores_after = score_all_points(affected_nodes, G, amenities_after, categories=CATEGORIES)
+    scores_after = score_all_points_fast(affected_nodes, G, amenities_after, categories=CATEGORIES)
     scores_after = normalize_with_fixed_bounds(scores_after, CATEGORIES, bounds)
+    t2 = time.time()
+    print(f"cache load: {t1-t0:.2f}s, scoring: {t2-t1:.2f}s", flush=True)
 
     return SimulationResult(
         ward=ward_name,
