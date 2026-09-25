@@ -25,14 +25,12 @@ The "what-if" simulator reuses the same scoring pipeline against a ward's cached
 
 ## Architecture
 
-The project follows the same "process once, serve fast" principle: every ward's street network and amenities are downloaded and scored exactly once in an offline batch step, never recomputed live except for the specific hypothetical point a user is testing.
-
 ```
 OpenStreetMap PBF extract + ward boundaries
     -> scripts/build_all_wards.py  (network loading, scoring, LISA — resumable, all 145 wards)
     -> data/ward_scores_final.geojson + data/ward_cache/ (per-ward graphs + amenities)
     -> api/main.py  (FastAPI — serves precomputed scores, runs live /simulate on cached data)
-    -> frontend/index.html  (Leaflet + vanilla JS, no build step)
+    -> frontend/index.html  (Leaflet + vanilla JS)
 ```
 
 ## Tech stack
