@@ -1,6 +1,6 @@
 
 # Urban Accessability Analysis - Hyderabad
-https://github.com/user-attachments/assets/f12a83f0-4dac-4a60-a506-5058cb8823e6
+
 [![Watch the demo](assets/urban_analysis_ss.png)](assets/urban_analysis_vid.mp4)
 
 **Live site:** [Urban Accessability Analysis](https://urban-analysis.vercel.app/)
