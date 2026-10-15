@@ -1,5 +1,7 @@
 # Urban Accessability Analysis - Hyderabad
 
+[▶ Watch the demo](assets/urban_analysis_vid.mp4)
+
 **Live site:** [Urban Accessability Analysis](https://urban-analysis.vercel.app/)
 
 An interactive walkability-mapping tool covering all 145 municipal wards of Hyderabad. Rather than a single static "walkability score," it computes real 15-minute pedestrian access to five essential amenity categories using actual street networks, statistically classifies which parts of the city form genuine accessibility clusters versus noise, and lets you simulate the effect of adding a new amenity anywhere on the map.
